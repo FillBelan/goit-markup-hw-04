@@ -194,9 +194,9 @@ body {
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
- display: flex;
- justify-content: center;
- }
+  display: flex;
+  justify-content: center;
+}
 
 .advanteges-list {
   display: flex;
@@ -307,6 +307,40 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+.customers-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.customers-item-link {
+  display: flex; 
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.customers-item-link:focus .customers-logo,
+ .customers-item-link:hover .customers-logo {
+  fill: var(--accent-text-color);
+}
+.customers-item-link:hover,
+ .customers-item-link:focus {
+  border: 1px solid var(--accent-text-color);
+ }
+
+.customers-logo {
+  fill: #AFB1B8;
 }
 
 .portfolio {
