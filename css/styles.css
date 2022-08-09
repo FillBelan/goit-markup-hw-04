@@ -112,6 +112,8 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .contacts-link:hover,
@@ -125,11 +127,29 @@ body {
   gap: 50px;
 }
 
+.contacts-icon-svg:hover,
+.contacts-icon-svg:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  fill: var(--accent-text-color);
+}
+
+.contacts-icon-svg {
+  margin-right: 10px;
+}
+
 .hero {
   background-color: #2F303A;
   height: 600px;
   padding-top: 200px;
-
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -170,6 +190,14 @@ body {
   width: 270px;
 }
 
+.advanteges-logo {
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+ display: flex;
+ justify-content: center;
+ }
+
 .advanteges-list {
   display: flex;
   gap: 30px;
@@ -207,31 +235,36 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
-.team-soc{
+
+.team-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.team-soc-link{
+
+.team-soc-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
+
 .team-soc-link:hover,
-.team-soc-link:focus{
-background-color: var(--accent-text-color);
+.team-soc-link:focus {
+  background-color: var(--accent-text-color);
 }
-.team-soc-link:hover .team-soc-icon ,
- .team-soc-link:focus .team-soc-icon {
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
   fill: #FFFFFF;
-  
+
 }
-.team-soc-icon{
+
+.team-soc-icon {
   fill: #AFB1B8;
 }
 
