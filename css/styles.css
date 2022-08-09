@@ -207,6 +207,33 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
+.team-soc{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-soc-link{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:#FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.team-soc-link:hover,
+.team-soc-link:focus{
+background-color: var(--accent-text-color);
+}
+.team-soc-link:hover .team-soc-icon ,
+ .team-soc-link:focus .team-soc-icon {
+  fill: #FFFFFF;
+  
+}
+.team-soc-icon{
+  fill: #AFB1B8;
+}
 
 .working {
   padding-bottom: 94px;
@@ -246,6 +273,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .portfolio {
