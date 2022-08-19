@@ -21,7 +21,7 @@
             <nav class="header-nav">
                 <a href="./index.html" lang="en" class="header-logo link"><span class="logo">Web</span>Studio</a>
                 <ul class="header-list list">
-                    <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link current link">Студия</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
                     <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
                 </ul>
@@ -320,6 +320,23 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>&#10006</button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <div class="form-field"><label for=""><span class="input-title">Имя</span>
+                    </label><input type="text" class="form-input" name="user-name" required>
+                </div>
+                <div class="form-field"><label for=""><span class="input-title">Телефон</span></label><input type="tel"
+                        class="form-input" name="user-tel" required>
+                </div>
+                <div class="form-field"><label for=""><span class="input-title">Почта</span></label><input type="email"
+                        class="form-input" name="user-email" required>
+                </div>
+                <div class="form-field">
+                    <label for="user-comment"><span class="input-title">Введите текст</span></label>
+                    <textarea name="user-comment" id="user-comment" class="modal-comment"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
